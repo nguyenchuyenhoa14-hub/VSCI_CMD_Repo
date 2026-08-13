@@ -1,11 +1,6 @@
 # VSCI-CMD: Volume–Surface Cascaded Integration Cylindrical Modal Decomposition
 
-**Paper:** "VSCI-CMD: Volume–Surface Cascaded Integration Cylindrical Modal Decomposition
-for Near-Field TSV Metrology via Physics-Guided Kernel Ridge Regression"  
-**Journal:** Computer Physics Communications (Elsevier)  
-**Authors:** Nguyen Vo, Song-En Chen, Jia-Han Li  
-**Affiliation:** National Taiwan University, Taipei, Taiwan  
-**License:** GNU General Public License v3.0 (GPL-3.0)
+
 
 ---
 
