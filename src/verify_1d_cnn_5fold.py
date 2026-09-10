@@ -6,8 +6,11 @@ from torch.utils.data import DataLoader, TensorDataset
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import KFold
 
-os.chdir(r"C:\Users\Jack\VSCI_Baselines")
-data = np.load("baseline_features_dataset.npz")
+data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
+data_path = os.path.join(data_dir, "baseline_features_dataset.npz")
+if not os.path.exists(data_path):
+    data_path = "baseline_features_dataset.npz"
+data = np.load(data_path)
 X_all = np.vstack([data["X_tr"], data["X_vl"]])
 y_all = np.vstack([data["y_tr"], data["y_vl"]])
 print("Loaded dataset shape:", X_all.shape, y_all.shape)

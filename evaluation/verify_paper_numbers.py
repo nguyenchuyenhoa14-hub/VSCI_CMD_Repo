@@ -13,15 +13,30 @@ Output:
 import re, sys, os
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src"))
-from PAPER_NUMBERS import (
-    DATASET, TABLE3, TABLE3_DERIVED,
-    TABLE4, TABLE4_DERIVED,
-    TABLE5, TABLE5_DERIVED,
-    FIG6, FIG7, PHYSICS, TEXT_CLAIMS,
-    GROUP_KFOLD, GROUP_KFOLD_DERIVED
-)
+try:
+    from paper_constants import (
+        DATASET, TABLE3, TABLE3_DERIVED,
+        TABLE4, TABLE4_DERIVED,
+        TABLE5, TABLE5_DERIVED,
+        FIG6, FIG7, PHYSICS, TEXT_CLAIMS,
+        GROUP_KFOLD, GROUP_KFOLD_DERIVED
+    )
+except ImportError:
+    from PAPER_NUMBERS import (
+        DATASET, TABLE3, TABLE3_DERIVED,
+        TABLE4, TABLE4_DERIVED,
+        TABLE5, TABLE5_DERIVED,
+        FIG6, FIG7, PHYSICS, TEXT_CLAIMS,
+        GROUP_KFOLD, GROUP_KFOLD_DERIVED
+    )
 
-TEX_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "docs", "VSD_CMD_Paper.tex")
+_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+_TEX_CANDIDATES = [
+    os.path.join(_ROOT, "manuscripts", "VSCI_Paper_Review.tex"),
+    os.path.join(_ROOT, "docs", "VSD_CMD_Paper.tex"),
+    os.path.join(_ROOT, "VSCI_Paper_Review.tex"),
+]
+TEX_FILE = next((p for p in _TEX_CANDIDATES if os.path.exists(p)), _TEX_CANDIDATES[0])
 
 # ============================================================================
 # Helper: read the tex file
