@@ -31,9 +31,6 @@ The **VSCI** framework deterministically factorizes the inverse scattering probl
 ```
 VSCI_CMD_Repo/
 ├── LICENSE                        # GNU General Public License v3.0
-├── PROGRAM_SUMMARY.txt            # Elsevier CPC Program Summary
-├── requirements.txt               # Python package dependencies
-├── environment.yml                # Conda environment specification
 ├── README.md                      # This documentation
 ├── src/                           # Core implementation pipeline
 │   ├── run_pipeline.py            # Main 4-stage VSCI pipeline (Fixed split + 5-fold CV)
