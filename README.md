@@ -12,7 +12,7 @@ Accompanying manuscript submitted to *Computer Physics Communications* (Elsevier
 
 ## Structure
 
-`
+```
 VSCI_CMD_Repo/
 ├── LICENSE
 ├── README.md
@@ -20,34 +20,34 @@ VSCI_CMD_Repo/
     ├── run_pipeline.py            # Main VSCI pipeline (Fixed-split & 5-fold CV)
     ├── generate_multimode_lut.py  # 1D FDM PML cylindrical modal eigensolver
     └── generate_figures.py        # Figure reproduction script (Figs. 1-7)
-`
+```
 
 ---
 
 ## Installation
 
-`ash
+```bash
 pip install numpy scipy scikit-learn matplotlib
-`
+```
 
 ---
 
 ## Quick Start
 
 ### 1. Build Physics LUT (~2 min)
-`ash
+```bash
 python src/generate_multimode_lut.py
-`
+```
 
 ### 2. Run Pipeline (~15 min)
-`ash
+```bash
 python src/run_pipeline.py
-`
+```
 
 ### 3. Generate Figures
-`ash
+```bash
 python src/generate_figures.py
-`
+```
 
 ---
 
@@ -65,7 +65,7 @@ python src/generate_figures.py
 
 ## Citation
 
-`ibtex
+```bibtex
 @article{vo2026vsci,
   title   = {Physics-Guided Machine Learning for Near-Field Metrology of High-Aspect-Ratio Through-Silicon Vias Using Cylindrical Modal Decomposition},
   author  = {Vo, Nguyen and Chen, Song-En and Ho, Chao-Ching and Li, Jia-Han},
@@ -73,7 +73,7 @@ python src/generate_figures.py
   year    = {2026},
   doi     = {10.5281/zenodo.21925226}
 }
-`
+```
 
 ---
 
