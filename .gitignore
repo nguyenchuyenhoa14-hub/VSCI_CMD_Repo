@@ -1,0 +1,24 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments & IDEs
+.venv/
+venv/
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# Data caches (>50MB kept on Zenodo repository)
+*.npz
+*.npy
+*.h5
+*.mat
+*.zip
+*.tar.gz
+
+# Figures output
+docs/figs/*.png
+docs/figs/*.pdf

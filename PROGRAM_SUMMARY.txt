@@ -3,12 +3,13 @@
 NOTE: Paste into Elsevier Editorial Manager "Program Summary" field, or upload as Program_Summary.txt
 
 ## Program Title
-VSCI-CMD: Volume-Surface Cascaded Integration Cylindrical Modal Decomposition for Near-Field TSV Metrology
+VSCI: Volume--Surface Cascaded Integration for High-Aspect-Ratio TSV Near-Field Metrology
 
 ## Authors
-Nguyen Vo, Song-En Chen, Jia-Han Li
-National Taiwan University, Taipei, Taiwan
-Corresponding author: jiahan@ntu.edu.tw
+Nguyen Vo (1), Song-En Chen (1), Chao-Ching Ho (2), Jia-Han Li (1)
+(1) National Taiwan University, Taipei, Taiwan
+(2) National Taipei University of Technology, Taipei, Taiwan
+Corresponding authors: hochao@ntut.edu.tw, jiahan@ntu.edu.tw
 
 ## Program Language
 Python 3.9+
